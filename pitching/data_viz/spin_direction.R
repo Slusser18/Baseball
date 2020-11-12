@@ -18,7 +18,7 @@ spin_direction_pbp <- read_csv("Desktop/spin_direction_pbp.csv") # Spin Directio
 # Merge the two files
 # Common variables of batter, pitcher, game id, pitch number, inning
 # Create the file name Statcast_2020_spin_direction
-Statcast_2020_spin_direction <- merge(Statcast_2020, spin_direction_pbp
+Statcast_2020_spin_direction <- merge(Statcast_2020, spin_direction_pbp,
                                       by = c('batter','pitcher','game_pk','pitch_number','inning'))
 
 # Select the important variables that we need (this selects all the important pitch characteristic variables)
