@@ -38,7 +38,7 @@ Cole <- Cole %>%
   group_by(pitch_name) %>%
   summarise(release_spin_direction = mean(release_spin_direction),
             count = n()) %>%
-  mutate(freq = count / sum(count) * 100) # This makes the percentage out of 100
+  mutate(freq = count / sum(count))
 
 ##### Now visualize the spin rotation direction
 # Use ggplot2
