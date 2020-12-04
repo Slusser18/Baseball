@@ -12,8 +12,8 @@ library(ggplot2) # Plot the data
 library(ggthemes) # Themes for ggplot2
 
 ##### Read in the dataset
-Statcast_2020 <- read_csv("Downloads/Statcast_2020.csv") # Full Statcast
-spin_direction_pbp <- read_csv("Desktop/spin_direction_pbp.csv") # Spin Direction (Bill Petti)
+Statcast_2020 <- read_csv("Downloads/Statcast_2020.csv") # Full Statcast data from 2020
+spin_direction_pbp <- read_csv("Desktop/spin_direction_pbp.csv") # Spin Direction (This comes from Bill Petti)
 
 # Merge the two files
 # Common variables of batter, pitcher, game id, pitch number, inning
