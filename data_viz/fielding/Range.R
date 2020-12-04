@@ -34,6 +34,7 @@ thirdBase %>% # This is a subset of the statcast data where a groundball was hit
        y = "Vertical Location",
        color = "Name",
        caption = "Data: Baseball Savant\nData Visualization: TDK Baseball") +
+  # Adjust theme
   theme_bw() +
   # View by Game Year over three columns (since we only are looking at 3 years. If 2 years or 4 years, 2 columns)
   facet_wrap(~ game_year, ncol = 3) +
