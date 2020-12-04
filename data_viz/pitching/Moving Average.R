@@ -10,7 +10,7 @@ library(ggplot2) # For visualizing the data
 library(ggthemes)
 library(zoo) # For moving average
 
-statcast %>% # Use the data set
+statcast %>% # Use the data (where statcast is the full statcast data from baseball savant)
   select(game_year, release_speed, game_date, pitch_number, pitch_name, at_bat_number) %>% # select the variables
   filter(!is.na(pitch_name) & !is.na(release_speed)) %>% # Filter out where the pitch name and speed are empty
   filter(player_name == "Mike Foltynewicz") %>% # Select which player to use
