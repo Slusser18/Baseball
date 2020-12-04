@@ -21,6 +21,12 @@ statcast %>% # Use the data (where statcast is the full statcast data from baseb
   mutate(release_speed.ma = rollapply(release_speed, 15, mean, align = 'right', fill = NA)) %>%
   ggplot(aes(x = game_year, y = velo, group = pitch_name, color = pitch_name)) + # Set the plot
   geom_line(size = 1.25) + # Size of line
+  # Scale the colors of the pitch type
+  # Red = fastball, blue = changeup, purple = curveball, green = cutter, yellow = sinker/2-seam, orange = slider
+  # You can pick your own colors, these are just what I use
+  scale_color_manual(labels = c("4-Seam Fastball", "Changeup", "Curveball", "Sinker", "Slider"), # These are the
+                                                                            # pitches that Foltynewicz throws
+                     values = c("red", "blue", "purple", "yellow", "orange")) + # Corresponding colors
   labs(title = "Mike Foltynewicz Velocity",
        subtitle = "Average by Year",
        x = "Game Year",
