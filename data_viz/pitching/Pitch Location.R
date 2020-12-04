@@ -14,7 +14,7 @@ statcast %>% # Select the data (where statcast is the full statcast data from ba
   # Filter data by selecting the pitcher and removing missing pitch names and pitch locations
   filter(player_name == "Mitch Keller" & !is.na(pitch_name) & !is.na(pfx_x) & !is.na(pfx_z)) %>%
   # Filter by year (this example it is commented out but could be used for individual season)
-  # If you want one year, make it game_year = "2020"
+  # If you want one year, make it game_year == "2020"
   # filter(game_year >= 2019 & game_year <= 2020)
   group_by(pitch_name) %>% # Group by pitch type and arm for average
   ggplot(aes(x = plate_x, y = plate_z)) + # This is the pitch location for horizontal and vertical location
