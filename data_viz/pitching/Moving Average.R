@@ -25,7 +25,7 @@ statcast %>% # Use the data (where statcast is the full statcast data from baseb
        subtitle = "Average by Year",
        x = "Game Year",
        y = "Release Speed",
-       caption = "Data: Baseball Savant\nData Visualization: @piRatesanalysis",
+       caption = "Data: Baseball Savant\nData Visualization: TDK Baseball",
        color = "Pitch Name") +
   theme_minimal() +
   theme(text = element_text(size = 20))
