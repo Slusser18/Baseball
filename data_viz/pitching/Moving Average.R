@@ -15,7 +15,7 @@ statcast %>% # Use the data (where statcast is the full statcast data from baseb
   filter(!is.na(pitch_name) & !is.na(release_speed)) %>% # Filter out where the pitch name and speed are empty
   filter(player_name == "Mike Foltynewicz") %>% # Select which player to use
   # Filter by year (this example it is commented out but could be used for individual season)
-  # If you want one year, make it game_year = "2020"
+  # If you want one year, make it game_year == "2020"
   # filter(game_year >= 2019 & game_year <= 2020)
   # We want to sort by date, at bat and pitch number to create the rolling average
   arrange(game_date, at_bat_number, pitch_number) %>%
