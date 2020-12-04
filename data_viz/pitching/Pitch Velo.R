@@ -18,11 +18,11 @@ statcast %>% # Select the data (where statcast is the full statcast data from ba
   ggplot(aes(x = release_speed, fill = as.factor(pitch_name))) +
   # Geom density will provide the distribution of pitch velocity from the pitcher
   geom_density(alpha = 0.50) + # Adjust the alpha level
-  # Add lebels
-  labs(title = "Pitch Velocity", # Title
+  # Add labels
+  labs(title = "Pitch Velocity",
        subtitle = "Distribution",
-       x = "Release Speed (MPH)", # x-axis
-       y = "Density", # y-axis
+       x = "Release Speed (MPH)",
+       y = "Density",
        caption = "Data: Baseball Savant\nData Visualization: TDK Baseball",
        fill = "Pitch Name") +
   theme_bw() +
