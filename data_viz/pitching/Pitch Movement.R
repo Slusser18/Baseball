@@ -13,7 +13,7 @@ statcast %>% # Select the data (where statcast is the full statcast data from ba
   # Filter data by selecting the pitcher and removing missing pitch movements
   filter(player_name == "Gerrit Cole" & !is.na(pfx_x) & !is.na(pfx_x)) %>%
   # Filter by year (this example it is commented out but could be used for individual season)
-  # If you want one year, make it game_year = "2020"
+  # If you want one year, make it game_year == "2020"
   # filter(game_year >= 2019 & game_year <= 2020)
   ggplot(aes(x = pfx_x*12, y = pfx_z*12, color = pitch_name)) + # Multiply by 12 for inches
   geom_point() + # Size of point
