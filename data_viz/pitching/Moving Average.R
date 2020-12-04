@@ -36,5 +36,5 @@ statcast %>% # Use the data (where statcast is the full statcast data from baseb
        y = "Release Speed",
        caption = "Data: Baseball Savant\nData Visualization: TDK Baseball",
        color = "Pitch Name") +
-  theme_minimal() +
+  theme_bw() +
   theme(text = element_text(size = 20))
