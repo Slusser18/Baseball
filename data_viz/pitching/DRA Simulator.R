@@ -27,7 +27,6 @@ teams <- read_excel("Desktop/teams.xlsx",
 ## Now we want to create a simulation of dra
 ## We know the dra and dra SD
 ## 10,000 simulations
-## Why 10,000? Neal Huntington troll: https://twitter.com/jmackeypg/status/1163252138526629889
 numsims = 10000 # Number of simulations
 
 ## Create a new DRA table where it is the player's name, id, dra, and dra sd
