@@ -107,5 +107,5 @@ maxEVquartile <- battedBalls %>%
 
 ## Calculate the PV of power grade
 maxEVquartile$PV <- cut(maxEVquartile$z_score,
-                breaks = c(-Inf, -3, -2, -1.5, -1, -0.5, 0.5, 1, 1.5, 2, 2.5, Inf),
-                labels = c(20, 30, 35, 40, 45, 50, 55, 60, 65, 70, 80))
+                        breaks = c(-Inf, -3, -2, -1, -0.5, 0.5, 1, 2, 2.5, Inf),
+                        labels = c(20, 30, 40, 45, 50, 55, 60, 70, 80))
